@@ -1,7 +1,7 @@
 {
   "name": "predictive-prefetch",
   "version": "0.1.0",
-  "description": "",
+  "description": "A JavaScript client-side predictive prefetch solution for webpack and SPAs.",
   "main": "./src/index.js",
   "keywords": [
     "prediction",
