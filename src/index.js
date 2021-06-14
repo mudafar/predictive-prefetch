@@ -12,7 +12,6 @@ function PredictivePrefetch(options = DEFAULT_OPTIONS) {
   const predictor = new Predictor(options.predictor);
   assets(predictor, options.assets);
   urls(predictor, options.urls);
-  console.log(predictor)
 }
 
 export default PredictivePrefetch;

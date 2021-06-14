@@ -17,13 +17,11 @@ function assets(predictor, options = DEFAULT_OPTIONS) {
         for (const node of mutation.addedNodes) {
           if (options && !options.scriptsDisabled && node.src) {
             // script tag
-            console.log(node.src);
             URLS.push(node.src);
           } else if (options && !options.resourcesDisabled && node.innerHTML && node.innerHTML.includes('src')) {
             // other resources, like images
             // TODO: check other types
             [...node.innerHTML.matchAll(/.*?src="(.*?)"/g)].forEach((src) => {
-              console.log(src[1]);
               URLS.push(src[1]);
             });
           }
@@ -34,7 +32,6 @@ function assets(predictor, options = DEFAULT_OPTIONS) {
             predictor.add(URL);
             const prediction = predictor.get();
             if (prediction) {
-              console.log('asset added for: ', prediction)
               appendLinkTag(prediction.link, document.head);
             }
           } else {

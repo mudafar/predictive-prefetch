@@ -1,4 +1,4 @@
-import appendLinkTag from "./link-tag";
+import appendLinkTag from './link-tag';
 
 const DEFAULT_OPTIONS = { disabled: false };
 
@@ -7,7 +7,7 @@ function urls(predictor, options = DEFAULT_OPTIONS) {
     return;
   }
 
-  const pushState = window.history.pushState;
+  const { pushState } = window.history;
   window.history.pushState = function historyPushState(...args) {
     // if (typeof window.history.onpushstate == "function") {
     //   window.history.onpushstate({ state });
@@ -17,11 +17,9 @@ function urls(predictor, options = DEFAULT_OPTIONS) {
     // TODO: don't add dynamic url, specially one-time or temporary URLS
     // one way is to check if the url is used more than 3 times, then
     // add it to the predictor.
-    console.log(url);
     predictor.add(url);
     const prediction = predictor.get();
     if (prediction) {
-      console.log('url added for: ', prediction)
       appendLinkTag(prediction.link, document.head);
     }
 
