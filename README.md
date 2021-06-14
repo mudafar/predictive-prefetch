@@ -79,4 +79,4 @@ PredictivePrefetch(options);
 
 
 ## License
-ALZ predictor is [MIT licensed](./LICENSE).
+Predictive Prefetch is [MIT licensed](./LICENSE).
