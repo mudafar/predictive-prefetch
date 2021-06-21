@@ -1,4 +1,4 @@
-# Predictive Prefetch &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/mudafar/predictive-prefetch/blob/master/LICENSE) [![npm version](https://img.shields.io/npm/v/predictive-prefetch.svg?style=flat)](https://www.npmjs.com/package/predictive-prefetch)  ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+# Predictive Prefetch js &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/mudafar/predictive-prefetch/blob/master/LICENSE) [![npm version](https://img.shields.io/npm/v/predictive-prefetch.svg?style=flat)](https://www.npmjs.com/package/predictive-prefetch)  ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
 100% client side, out of the box predictive prefetch solution for webpack and modern SPAs, based on **[alz-predictor](https://github.com/mudafar/alz-predictor/)**. 
 
